@@ -5,6 +5,7 @@ import com.yf.usercenter.service.UserService;
 import java.util.Map;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -23,6 +24,12 @@ import org.springframework.web.bind.annotation.RestController;
 public class UserController {
   @Autowired
   private UserService userService;
+
+  @Value("${user.name}")
+  private String name;
+
+  @Value("${user.age}")
+  private Integer age;
 
   @PostMapping("/add")
   public SysUser addUser(@RequestBody  SysUser sysUser){
@@ -49,6 +56,10 @@ public class UserController {
   public SysUser getUserById(@PathVariable String id){
     log.info("我被请求了，请求id={}",id);
     return userService.getUserById(id);
+  }
+  @GetMapping("/getConfig")
+  public String getCongigure(){
+    return age+name;
   }
 
 }
