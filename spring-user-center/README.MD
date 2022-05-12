@@ -1,6 +1,5 @@
 ## nacos 配置管理
 步骤一：启动nacos服务
-
 步骤二：在对应的微服务中添加jar依赖
 <!--nacos配置管理，必须引入-->
      <!--服务注册，必须引入-->
@@ -41,4 +40,6 @@ spring:
       # nacos 配置文件格式
       config:
         file-extension: yaml
+
+![Image text](https://github.com/yangfeng19901210/spring-cloud/blob/master/spring-user-center/src/main/resources/images/nacosconfig.png)
 步骤四：启动项目进行测试
