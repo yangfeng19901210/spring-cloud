@@ -3,13 +3,20 @@ server:
 
 spring:
   application:
+    #服务名称定义
     name: user-center
   profiles:
+    # 环境切换
     active: test
   cloud:
+    sentinel:
+      transport:
+        dashboard: 127.0.0.1:8080
     nacos:
       discovery:
+        #nacos地址
         server-addr: localhost:8848
+      # nacos 配置文件格式
       config:
         file-extension: yaml
 

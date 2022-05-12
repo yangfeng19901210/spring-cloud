@@ -9,6 +9,10 @@ spring:
     # 环境切换
     active: test
   cloud:
+    sentinel:
+      transport:
+        # 配置连接控制台
+        dashboard: 127.0.0.1:8080
     nacos:
       discovery:
         #nacos地址
