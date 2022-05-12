@@ -18,5 +18,5 @@
           <artifactId>spring-cloud-starter-bootstrap</artifactId>
         </dependency>
 步骤三：在bootstrap.yml中添加配置
-
+![Image text](https://github.com/yangfeng19901210/spring-cloud/blob/master/spring-user-center/src/main/resources/images/nacosconfig.png)
 步骤四：启动项目进行测试
