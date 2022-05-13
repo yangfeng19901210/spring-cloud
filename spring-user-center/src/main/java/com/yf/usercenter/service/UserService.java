@@ -1,7 +1,6 @@
 package com.yf.usercenter.service;
 
 import com.yf.usercenter.entity.SysUser;
-import com.yf.usercenter.entity.SysUser.SysUserBuilder;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.UUID;

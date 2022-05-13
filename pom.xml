@@ -11,6 +11,7 @@
   <modules>
     <module>spring-user-center</module>
     <module>spring-order-center</module>
+    <module>spring-generate-code</module>
   </modules>
 
   <properties>

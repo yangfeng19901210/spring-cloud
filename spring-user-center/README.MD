@@ -43,3 +43,12 @@ spring:
 
 ![Image text](https://github.com/yangfeng19901210/spring-cloud/blob/master/spring-user-center/src/main/resources/images/nacosconfig.png)
 步骤四：启动项目进行测试
+
+export JAVA_HOME=/usr/java/jdk1.8.0_333
+export CLASSPATH=.:%JAVA_HOME/lib/dt.jar:%JAVA_HOME/lib/tools.jar
+export PATH=$PATH:$JAVA_HOME/bin
+
+namesrvAddr=192.168.1.19:9876
+brokerIP1=192.168.1.19
+
+nohup sh bin/mqbroker -n 192.168.1.19:9876 -c conf/broker.conf autoCreateTopicEnable=true > ~/logs/rocketmqlogs/broker.log &

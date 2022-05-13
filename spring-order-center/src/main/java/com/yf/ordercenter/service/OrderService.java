@@ -1,13 +1,17 @@
 package com.yf.ordercenter.service;
 
 import com.yf.ordercenter.api.UserRomoteService;
+import com.yf.ordercenter.dto.USerOrderDTO;
 import com.yf.ordercenter.dto.UserDto;
 import com.yf.ordercenter.entity.Order;
 import com.yf.ordercenter.vo.OrderVo;
 import java.util.HashMap;
 import java.util.Map;
+import org.apache.rocketmq.spring.annotation.RocketMQTransactionListener;
+import org.apache.rocketmq.spring.core.RocketMQTemplate;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.messaging.support.MessageBuilder;
 import org.springframework.stereotype.Service;
 
 /**
@@ -18,6 +22,8 @@ import org.springframework.stereotype.Service;
 @Service
 public class OrderService {
   private static final Map<String , Order> orderMap = new HashMap<String ,Order>();
+  @Autowired
+  private RocketMQTemplate rocketMQTemplate;
 
   @Autowired
   UserRomoteService userRomoteService;
@@ -71,6 +77,18 @@ public class OrderService {
 
   public Map getAll(){
     return orderMap;
+  }
+
+  public void createOrderMsg(){
+    rocketMQTemplate.sendMessageInTransaction("order-end-msg",MessageBuilder.withPayload(
+        USerOrderDTO.builder()
+            .id(1)
+            .equipmentNo("no-111")
+            .port("7")
+            .endReason("订单结束")
+            .build()
+    ).build(),"name");
+
   }
 
 
