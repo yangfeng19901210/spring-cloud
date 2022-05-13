@@ -102,7 +102,7 @@ public class MpGenerator {
         //strategy.setExclude(new String[]{rb.getString("tableName")});
 
         //建立包含哪些表空 为所有表
-        strategy.setInclude();
+        strategy.setInclude("rocketmq_transaction_log");
         mpg.setStrategy(strategy);
         mpg.setTemplateEngine(new FreemarkerTemplateEngine());
         mpg.execute();

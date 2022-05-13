@@ -1,5 +1,7 @@
 package com.yf.ordercenter.model;
 
+import com.baomidou.mybatisplus.annotation.IdType;
+import com.baomidou.mybatisplus.annotation.TableId;
 import java.util.Date;
 import java.io.Serializable;
 import lombok.AllArgsConstructor;
@@ -28,6 +30,7 @@ public class SpringBusShare implements Serializable {
     /**
      * 主键
      */
+    @TableId(value = "id", type = IdType.AUTO)
     private Integer id;
 
     /**
@@ -49,6 +52,10 @@ public class SpringBusShare implements Serializable {
      * 分享时间
      */
     private Date creteTime;
+    /***
+     * 文章状态
+     */
+    private Integer status;
 
 
 }

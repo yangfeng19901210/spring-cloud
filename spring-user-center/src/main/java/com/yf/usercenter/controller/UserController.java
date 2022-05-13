@@ -59,7 +59,7 @@ public class UserController {
   }
   @GetMapping("/getConfig")
   public String getCongigure(){
-    return age+name;
+    return "姓名="+name+"年龄="+age;
   }
 
 }

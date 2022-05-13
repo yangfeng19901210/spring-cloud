@@ -9,11 +9,12 @@
         <result column="content" property="content" />
         <result column="user_id" property="userId" />
         <result column="crete_time" property="creteTime" />
+        <result column="status" property="status" />
     </resultMap>
 
     <!-- 通用查询结果列 -->
     <sql id="Base_Column_List">
-        id, title, content, user_id, crete_time
+        id, title, content, user_id, crete_time,status
     </sql>
 
 </mapper>
