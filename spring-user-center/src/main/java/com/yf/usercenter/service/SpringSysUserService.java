@@ -9,7 +9,7 @@ import com.baomidou.mybatisplus.extension.service.IService;
  * </p>
  *
  * @author yf
- * @since 2022-05-13
+ * @since 2022-05-16
  */
 public interface SpringSysUserService extends IService<SpringSysUser> {
 

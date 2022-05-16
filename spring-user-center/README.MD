@@ -50,5 +50,7 @@ export PATH=$PATH:$JAVA_HOME/bin
 
 namesrvAddr=192.168.1.19:9876
 brokerIP1=192.168.1.19
-
+#启动nameserv
+nohup sh bin/mqnamesrv > ~/logs/rocketmqlogs/namesrv.log &
+#启动broker
 nohup sh bin/mqbroker -n 192.168.1.19:9876 -c conf/broker.conf autoCreateTopicEnable=true > ~/logs/rocketmqlogs/broker.log &
