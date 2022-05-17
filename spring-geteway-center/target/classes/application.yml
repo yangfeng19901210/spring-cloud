@@ -1,0 +1,47 @@
+server:
+  port: 8040
+spring:
+  #定义服务的名称
+  application:
+    name: gateway-center
+  #定义注册中心的地址
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+    gateway:
+      discovery:
+        locator:
+          #让gateway通过服务发现组件发现其他微服务
+          enabled: true
+          lower-case-service-id: true
+      routes:
+        - id: header_route
+          uri: http://localhost:8032/test/testHeader  #http方式通过ip和端口匹配时，通过这种配置才能实现
+          # 匹配由英文和数字组成的字符
+          predicates:
+            - Path=/test/testHeader    #必须和目标uri中端口号后面的路径一致
+            - Header=some,\d+
+        #Host 配置详解
+        - id: host_route
+          uri: lb://order-center
+          # 匹配由英文和数字组成的字符
+          predicates:
+            - Path=/test/**
+            - Host=**.org.com
+
+
+
+
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    health:
+      show-details: always
+logging:
+  level:
+    org.springframework.cloud.gateway: trace

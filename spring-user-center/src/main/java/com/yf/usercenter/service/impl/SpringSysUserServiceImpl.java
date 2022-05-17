@@ -17,4 +17,8 @@ import org.springframework.stereotype.Service;
 @Service
 public class SpringSysUserServiceImpl extends ServiceImpl<SpringSysUserMapper, SpringSysUser> implements SpringSysUserService {
 
+  @Override
+  public SpringSysUser getById(int id) {
+    return this.baseMapper.selectById(id);
+  }
 }

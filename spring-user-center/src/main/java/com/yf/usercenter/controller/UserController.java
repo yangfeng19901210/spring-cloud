@@ -1,6 +1,8 @@
 package com.yf.usercenter.controller;
 
 import com.yf.usercenter.entity.SysUser;
+import com.yf.usercenter.model.SpringSysUser;
+import com.yf.usercenter.service.SpringSysUserService;
 import com.yf.usercenter.service.UserService;
 import java.util.Map;
 import lombok.extern.slf4j.Slf4j;
@@ -25,6 +27,9 @@ public class UserController {
   @Autowired
   private UserService userService;
 
+  @Autowired
+  private SpringSysUserService springSysUserService;
+
   @Value("${user.name}")
   private String name;
 
@@ -45,21 +50,32 @@ public class UserController {
   public Map getAllUser(){
     return userService.getAllUser();
   }
-  /**
-   * @describe 根据id查询用户信息
-   * @author yangfeng
-   * @date 2022-05-11 16:24:58
-   * @param id
-   * @return
-   **/
-  @GetMapping("/{id}")
-  public SysUser getUserById(@PathVariable String id){
-    log.info("我被请求了，请求id={}",id);
-    return userService.getUserById(id);
-  }
+//  @GetMapping("/{id}")
+//  public SysUser getUserById(@PathVariable String id){
+//    log.info("我被请求了，请求id={}",id);
+//    return userService.getUserById(id);
+//  }
   @GetMapping("/getConfig")
   public String getCongigure(){
     return "姓名="+name+"年龄="+age;
   }
+
+  @GetMapping("/{id}")
+  public SpringSysUser getUserById(@PathVariable Integer id){
+    return springSysUserService.getById(id);
+  }
+  @GetMapping("/p/{name}")
+  public String getParam(@PathVariable String name){
+    return name;
+  }
+
+  @GetMapping("/query")
+  public String getParam(){
+    System.out.println("测试query工厂");
+    return "query";
+  }
+
+
+
 
 }

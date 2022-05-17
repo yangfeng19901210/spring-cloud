@@ -1,6 +1,7 @@
 package com.yf.usercenter.service;
 
 import com.yf.usercenter.entity.SysUser;
+import java.time.ZonedDateTime;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.UUID;
@@ -40,6 +41,10 @@ public class UserService {
 
   public SysUser getUserById(String id){
     return userMap.get(id);
+  }
+
+  public static void main(String[] args) {
+    System.out.println(ZonedDateTime.now());
   }
 
 

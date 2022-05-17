@@ -1,0 +1,71 @@
+server:
+  port: 8040
+spring:
+  #定义服务的名称
+  application:
+    name: gateway-center
+  #定义注册中心的地址
+  cloud:
+    nacos:
+      discovery:
+        server-addr: localhost:8848
+    gateway:
+      discovery:
+        locator:
+          #让gateway通过服务发现组件发现其他微服务
+          enabled: true
+      routes:
+        - id: after_route
+          # 该配置相当于http://localhost:8032
+          uri: lb://user-center
+          #当请求的时间大于After中所指定的时间时，路由才会匹配请求
+          predicates:
+#            - After=2022-06-16T11:27:21.047+08:00[Asia/Shanghai]
+             - Path=/user/**
+        - id: baidu_route
+          uri: https://www.jd.com/  # 目标服务地址
+          predicates:
+            - Path=/jd
+        # Before
+        - id: before_route
+          uri: http://localhost:8033/before
+          #GATEWAY_URL/before,请求这个路径时，如果当前的请求时间在Before指定的时间之前则进行路由匹配和转发，反之则报404
+          predicates:
+            - Before=2022-05-16T15:33:21.047+08:00[Asia/Shanghai]
+            - Path=/before
+        # Between
+        - id: between_route
+          uri: http://localhost:8033/between
+          #GATEWAY_URL/before,请求这个路径时，如果当前的请求时间在Before指定的时间之前则进行路由匹配和转发，反之则报404
+          predicates:
+            - Between=2022-05-16T15:42:21.047+08:00[Asia/Shanghai], 2022-05-16T15:50:21.047+08:00[Asia/Shanghai]
+            - Path=/between
+        #Cookie
+        - id: cookie_route
+          uri: http://localhost:8033/cookie
+          # 匹配由英文和数字组成的字符
+          predicates:
+            - Cookie=somecookie,^[A-Za-z0-9]+$
+            - Path=/cookie
+        # Header
+        - id: header_route
+          uri: http://localhost:8033/header
+          # 匹配由英文和数字组成的字符
+          predicates:
+            - Header=X-Request-Id,\d+
+            - Path=/header
+
+
+
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    health:
+      show-details: always
+logging:
+  level:
+    org.springframework.cloud.gateway: trace
