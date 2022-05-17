@@ -1,5 +1,6 @@
 package com.yf.usercenter;
 
+import com.yf.usercenter.annotation.MyAnnotation;
 import com.yf.usercenter.dao.SpringSysUserMapper;
 import com.yf.usercenter.model.SpringSysUser;
 import javax.annotation.Resource;
@@ -15,6 +16,7 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
  */
 @RunWith(SpringJUnit4ClassRunner.class)
 @SpringBootTest
+@MyAnnotation(name = "yyps")
 public class MapperTest {
   @Resource
   private SpringSysUserMapper springSysUserMapper;
