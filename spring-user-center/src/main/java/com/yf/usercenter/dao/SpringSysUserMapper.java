@@ -2,7 +2,7 @@ package com.yf.usercenter.dao;
 
 import com.yf.usercenter.model.SpringSysUser;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import org.apache.ibatis.annotations.Mapper;
+import org.springframework.stereotype.Repository;
 
 /**
  * <p>
@@ -10,9 +10,9 @@ import org.apache.ibatis.annotations.Mapper;
  * </p>
  *
  * @author yf
- * @since 2022-05-13
+ * @since 2022-05-16
  */
-//@Mapper
+@Repository
 public interface SpringSysUserMapper extends BaseMapper<SpringSysUser> {
 
 }

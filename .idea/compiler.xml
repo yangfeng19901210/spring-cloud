@@ -8,8 +8,9 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="spring-generate-code" />
-        <module name="springgateway" />
         <module name="spring-user-center" />
+        <module name="springgateway" />
+        <module name="spring-geteway-center" />
         <module name="spring-order-center" />
         <module name="spring-gateway" />
       </profile>
@@ -18,6 +19,7 @@
       <module name="spring-cloud" target="1.8" />
       <module name="spring-gateway" target="1.8" />
       <module name="spring-generate-code" target="1.8" />
+      <module name="spring-geteway-center" target="1.8" />
       <module name="spring-order-center" target="1.8" />
       <module name="spring-user-center" target="1.8" />
       <module name="springgateway" target="1.8" />

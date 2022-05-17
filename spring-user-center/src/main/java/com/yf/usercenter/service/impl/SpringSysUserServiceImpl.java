@@ -12,9 +12,13 @@ import org.springframework.stereotype.Service;
  * </p>
  *
  * @author yf
- * @since 2022-05-13
+ * @since 2022-05-16
  */
 @Service
 public class SpringSysUserServiceImpl extends ServiceImpl<SpringSysUserMapper, SpringSysUser> implements SpringSysUserService {
 
+  @Override
+  public SpringSysUser getById(int id) {
+    return this.baseMapper.selectById(id);
+  }
 }

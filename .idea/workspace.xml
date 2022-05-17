@@ -1,0 +1,582 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="2bbe79d1-c96f-4485-bb87-d3152b96e788" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/spring-generate-code/target/classes/com/yf/generatecode/utils/CodePath$CodePathBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-generate-code/target/classes/com/yf/generatecode/utils/CodePath.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-generate-code/target/classes/com/yf/generatecode/utils/MpGenerator$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-generate-code/target/classes/com/yf/generatecode/utils/MpGenerator$2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-generate-code/target/classes/com/yf/generatecode/utils/MpGenerator.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-generate-code/target/classes/com/yf/generatecode/utils/MySqlTypeConvertCustom.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-geteway-center/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-geteway-center/src/main/java/com/yf/gatewaycenter/GateWayCenterApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-geteway-center/src/main/java/com/yf/gatewaycenter/config/CorsConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-geteway-center/src/main/java/com/yf/gatewaycenter/config/GateWayConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-geteway-center/src/main/resources/----application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-geteway-center/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-geteway-center/target/classes/----application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-geteway-center/target/classes/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-geteway-center/target/classes/com/yf/gatewaycenter/GateWayCenterApplication.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-geteway-center/target/classes/com/yf/gatewaycenter/config/CorsConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-geteway-center/target/classes/com/yf/gatewaycenter/config/GateWayConfig.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-order-center/src/main/java/com/yf/ordercenter/controller/TestController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-order-center/target/classes/com/yf/ordercenter/controller/TestController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-user-center/src/main/java/com/yf/usercenter/controller/SpringBusBoundAddLogController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-user-center/src/main/java/com/yf/usercenter/dao/SpringBusBoundAddLogMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-user-center/src/main/java/com/yf/usercenter/model/SpringBusBoundAddLog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-user-center/src/main/java/com/yf/usercenter/service/SpringBusBoundAddLogService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-user-center/src/main/java/com/yf/usercenter/service/impl/SpringBusBoundAddLogServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-user-center/src/main/resources/mapper/SpringBusBoundAddLog.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-user-center/src/test/java/com/yf/usercenter/annotation/AnnotationEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-user-center/src/test/java/com/yf/usercenter/annotation/MyAnnotation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-user-center/target/classes/com/yf/usercenter/controller/SpringBusBoundAddLogController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-user-center/target/classes/com/yf/usercenter/dao/SpringBusBoundAddLogMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-user-center/target/classes/com/yf/usercenter/model/SpringBusBoundAddLog$SpringBusBoundAddLogBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-user-center/target/classes/com/yf/usercenter/model/SpringBusBoundAddLog.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-user-center/target/classes/com/yf/usercenter/service/SpringBusBoundAddLogService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-user-center/target/classes/com/yf/usercenter/service/impl/SpringBusBoundAddLogServiceImpl.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-user-center/target/classes/mapper/SpringBusBoundAddLog.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-user-center/target/test-classes/com/yf/usercenter/annotation/AnnotationEntity.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-user-center/target/test-classes/com/yf/usercenter/annotation/MyAnnotation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-generate-code/src/main/java/com/yf/generatecode/utils/MpGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-generate-code/src/main/java/com/yf/generatecode/utils/MpGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-order-center/src/main/java/com/yf/ordercenter/SpringOrderCenterApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-order-center/src/main/java/com/yf/ordercenter/SpringOrderCenterApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-order-center/target/classes/com/yf/ordercenter/SpringOrderCenterApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/spring-order-center/target/classes/com/yf/ordercenter/SpringOrderCenterApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-user-center/README.MD" beforeDir="false" afterPath="$PROJECT_DIR$/spring-user-center/README.MD" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-user-center/src/main/java/com/yf/usercenter/controller/HelloController.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-user-center/src/main/java/com/yf/usercenter/controller/HelloController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-user-center/src/main/java/com/yf/usercenter/controller/SpringSysUserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-user-center/src/main/java/com/yf/usercenter/controller/SpringSysUserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-user-center/src/main/java/com/yf/usercenter/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-user-center/src/main/java/com/yf/usercenter/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-user-center/src/main/java/com/yf/usercenter/dao/SpringSysUserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-user-center/src/main/java/com/yf/usercenter/dao/SpringSysUserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-user-center/src/main/java/com/yf/usercenter/model/SpringSysUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-user-center/src/main/java/com/yf/usercenter/model/SpringSysUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-user-center/src/main/java/com/yf/usercenter/rocket/TxAddboundConsumerListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-user-center/src/main/java/com/yf/usercenter/rocket/TxAddboundConsumerListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-user-center/src/main/java/com/yf/usercenter/service/SpringSysUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-user-center/src/main/java/com/yf/usercenter/service/SpringSysUserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-user-center/src/main/java/com/yf/usercenter/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-user-center/src/main/java/com/yf/usercenter/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-user-center/src/main/java/com/yf/usercenter/service/impl/SpringSysUserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-user-center/src/main/java/com/yf/usercenter/service/impl/SpringSysUserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-user-center/src/main/resources/mapper/SpringSysUser.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-user-center/src/main/resources/mapper/SpringSysUser.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-user-center/src/test/java/com/yf/usercenter/MapperTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-user-center/src/test/java/com/yf/usercenter/MapperTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-user-center/target/classes/com/yf/usercenter/controller/HelloController.class" beforeDir="false" afterPath="$PROJECT_DIR$/spring-user-center/target/classes/com/yf/usercenter/controller/HelloController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-user-center/target/classes/com/yf/usercenter/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/spring-user-center/target/classes/com/yf/usercenter/controller/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-user-center/target/classes/com/yf/usercenter/dao/SpringSysUserMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/spring-user-center/target/classes/com/yf/usercenter/dao/SpringSysUserMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-user-center/target/classes/com/yf/usercenter/model/SpringSysUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/spring-user-center/target/classes/com/yf/usercenter/model/SpringSysUser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-user-center/target/classes/com/yf/usercenter/rocket/TxAddboundConsumerListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/spring-user-center/target/classes/com/yf/usercenter/rocket/TxAddboundConsumerListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-user-center/target/classes/com/yf/usercenter/service/SpringSysUserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/spring-user-center/target/classes/com/yf/usercenter/service/SpringSysUserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-user-center/target/classes/com/yf/usercenter/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/spring-user-center/target/classes/com/yf/usercenter/service/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-user-center/target/classes/com/yf/usercenter/service/impl/SpringSysUserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/spring-user-center/target/classes/com/yf/usercenter/service/impl/SpringSysUserServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-user-center/target/classes/mapper/SpringSysUser.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-user-center/target/classes/mapper/SpringSysUser.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-user-center/target/test-classes/com/yf/usercenter/MapperTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/spring-user-center/target/test-classes/com/yf/usercenter/MapperTest.class" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/spring-generate-code/target/" />
+    <ignored path="$PROJECT_DIR$/spring-user-center/target/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <ignored path="$PROJECT_DIR$/spring-order-center/target/" />
+    <ignored path="$PROJECT_DIR$/spring-gateway/target/" />
+    <ignored path="$PROJECT_DIR$/spring-geteway-center/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spring-gateway/pom.xml">
+          <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="540">
+              <caret line="41" selection-start-line="41" selection-end-line="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="275">
+              <caret line="11" column="39" selection-start-line="11" selection-start-column="39" selection-end-line="11" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spring-gateway/src/main/java/com/yf/gateway/GatewayApplication.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="175">
+              <caret line="8" column="61" selection-start-line="8" selection-start-column="61" selection-end-line="8" selection-end-column="61" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spring-geteway-center/src/main/java/com/yf/gatewaycenter/config/GateWayConfig.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-195">
+              <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/spring-geteway-center/src/main/java/com/yf/gatewaycenter/config/CorsConfig.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="125">
+              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spring-gateway/src/main/resources/application.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="525">
+              <caret line="21" column="26" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spring-order-center/src/main/resources/application.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="9" column="35" selection-start-line="6" selection-start-column="2" selection-end-line="9" selection-end-column="35" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spring-order-center/src/main/java/com/yf/ordercenter/SpringOrderCenterApplication.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="325">
+              <caret line="19" column="21" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="21" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#498#499#0" expanded="true" />
+                <element signature="e#570#571#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/spring-user-center/src/main/resources/bootstrap.yml" />
+        <option value="$PROJECT_DIR$/spring-order-center/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/spring-gateway/src/main/java/com/yf/gateway/GatewayApplication.java" />
+        <option value="$PROJECT_DIR$/spring-gateway/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/spring-gateway/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-order-center/target/classes/application.yml" />
+        <option value="$PROJECT_DIR$/spring-user-center/target/classes/bootstrap.yml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="D:/mave_home/apache-maven-3.5.4" />
+        <option name="userSettingsFile" value="D:\mave_home\apache-maven-3.5.4\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand />
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1400" />
+    <option name="height" value="1000" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <flattenPackages ProjectPane="false" />
+      <hideEmptyPackages ProjectPane="true" />
+      <abbreviatePackageNames ProjectPane="false" />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="spring-cloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="spring-cloud" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="RestServicesNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="Found 9 services " type="fcff1e1b:RestServiceStructure$RootNode" />
+        </path>
+        <path>
+          <item name="Found 9 services " type="fcff1e1b:RestServiceStructure$RootNode" />
+          <item name="spring-order-center" type="c588b436:RestServiceStructure$ProjectNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.GatewayApplication">
+    <configuration name="GatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="springgateway" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.yf.gateway.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yf.gateway.GatewayApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringOrderCenterApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="spring-order-center" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yf.ordercenter.SpringOrderCenterApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringUserCenterApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="spring-user-center" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.yf.usercenter.SpringUserCenterApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.GatewayApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2bbe79d1-c96f-4485-bb87-d3152b96e788" name="Default Changelist" comment="" />
+      <created>1652447476182</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1652447476182</updated>
+      <workItem from="1652447477651" duration="8569000" />
+      <workItem from="1652600734062" duration="2455000" />
+    </task>
+    <task id="LOCAL-00001" summary="新增gateway模块">
+      <created>1652793790809</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1652793790809</updated>
+    </task>
+    <task id="LOCAL-00002" summary="新增gateway模块">
+      <created>1652793927110</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1652793927110</updated>
+    </task>
+    <task id="LOCAL-00003" summary="新增gateway模块">
+      <created>1652794011948</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1652794011948</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="11024000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.30291575" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="Web" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.40022936" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Spring" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Docker" order="9" />
+      <window_info anchor="bottom" id="CheckStyle" order="10" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="12" />
+      <window_info anchor="bottom" id="Java Enterprise" order="13" />
+      <window_info anchor="bottom" id="Database Changes" order="14" />
+      <window_info anchor="bottom" id="Version Control" order="15" visible="true" weight="0.32912844" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Maven" order="3" visible="true" weight="0.10961123" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info anchor="right" id="RestServices" order="9" weight="0.2024838" />
+      <window_info anchor="right" id="Bean Validation" order="10" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="新增gateway模块" />
+    <option name="LAST_COMMIT_MESSAGE" value="新增gateway模块" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/spring-user-center/src/main/java/com/yf/usercenter/controller/HelloController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-user-center/src/main/java/com/yf/usercenter/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="151">
+          <caret line="27" column="10" selection-start-line="27" selection-start-column="10" selection-end-line="27" selection-end-column="10" />
+          <folding>
+            <element signature="e#877#891#1" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-user-center/src/main/resources/bootstrap.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1550">
+          <caret line="62" column="31" selection-start-line="62" selection-start-column="31" selection-end-line="62" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-gateway/pom.xml">
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="41" selection-start-line="41" selection-end-line="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-gateway/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="21" column="26" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-order-center/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="9" column="35" selection-start-line="6" selection-start-column="2" selection-end-line="9" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-order-center/src/main/java/com/yf/ordercenter/SpringOrderCenterApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="19" column="21" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#498#499#0" expanded="true" />
+            <element signature="e#570#571#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="11" column="39" selection-start-line="11" selection-start-column="39" selection-end-line="11" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-gateway/src/main/java/com/yf/gateway/GatewayApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="8" column="61" selection-start-line="8" selection-start-column="61" selection-end-line="8" selection-end-column="61" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-geteway-center/src/main/java/com/yf/gatewaycenter/config/GateWayConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-195">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spring-geteway-center/src/main/java/com/yf/gatewaycenter/config/CorsConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>springgateway</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

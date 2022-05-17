@@ -6,11 +6,12 @@
     <resultMap id="BaseResultMap" type="com.yf.usercenter.model.SpringSysUser">
         <id column="id" property="id" />
         <result column="name" property="name" />
+        <result column="bound" property="bound" />
     </resultMap>
 
     <!-- 通用查询结果列 -->
     <sql id="Base_Column_List">
-        id, name
+        id, name, bound
     </sql>
 
 </mapper>

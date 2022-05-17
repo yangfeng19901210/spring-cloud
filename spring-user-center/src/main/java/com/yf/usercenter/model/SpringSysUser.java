@@ -12,7 +12,7 @@ import lombok.EqualsAndHashCode;
  * </p>
  *
  * @author yf
- * @since 2022-05-13
+ * @since 2022-05-16
  */
 @Data
 @EqualsAndHashCode(callSuper = false)
@@ -30,6 +30,11 @@ public class SpringSysUser implements Serializable {
      * 姓名
      */
     private String name;
+
+    /**
+     * 用户积分
+     */
+    private Integer bound;
 
 
 }
