@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/spring-cloud.iml" filepath="$PROJECT_DIR$/.idea/spring-cloud.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-gateway/spring-gateway.iml" filepath="$PROJECT_DIR$/spring-gateway/spring-gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-generate-code/spring-generate-code.iml" filepath="$PROJECT_DIR$/spring-generate-code/spring-generate-code.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-order-center/spring-order-center.iml" filepath="$PROJECT_DIR$/spring-order-center/spring-order-center.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-user-center/spring-user-center.iml" filepath="$PROJECT_DIR$/spring-user-center/spring-user-center.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-gateway/springgateway.iml" filepath="$PROJECT_DIR$/spring-gateway/springgateway.iml" />
+    </modules>
+  </component>
+</project>
