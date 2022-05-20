@@ -22,10 +22,10 @@ spring:
         file-extension: yaml
   #数据源信息配置
   datasource:
-    url: jdbc:mysql://localhost:3308/spring_user_center?useUnicode=true&characterEncoding=UTF-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=Asia/Shanghai&useSSL=false&allowMultiQueries=true
+    url: jdbc:mysql://localhost:3306/spring_user_center?useUnicode=true&characterEncoding=UTF-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=Asia/Shanghai&useSSL=false&allowMultiQueries=true
     driver-class-name: com.mysql.cj.jdbc.Driver
     username: root
-    password: root
+    password: 123456
     #数据库连接池信息配置
     type: com.alibaba.druid.pool.DruidDataSource
     druid:
@@ -60,7 +60,7 @@ spring:
         url-pattern: /*
         exclusions: '*.js,*.gif,*.png,*.css,*.ico,/druid/*'
 rocketmq:
-  name-server: 192.168.1.19:9876
+  name-server: 192.168.8.9:9876
   producer:
     group: test-group
 

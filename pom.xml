@@ -12,6 +12,7 @@
     <module>spring-user-center</module>
     <module>spring-order-center</module>
     <module>spring-generate-code</module>
+    <module>spring-gateway</module>
     <module>spring-geteway-center</module>
   </modules>
 
