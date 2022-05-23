@@ -16,7 +16,7 @@ spring:
     nacos:
       discovery:
         #nacos地址
-        server-addr: localhost:8848
+        server-addr: localhost:8849
       # nacos 配置文件格式
       config:
         file-extension: yaml
