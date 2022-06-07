@@ -1,17 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.yf.usercenter.dao.SpringSysUserMapper">
+<mapper namespace="com.yf.usercenter.dao.TestMybatisQueryMapper">
 
     <!-- 通用查询映射结果 -->
-    <resultMap id="BaseResultMap" type="com.yf.usercenter.model.SpringSysUser">
+    <resultMap id="BaseResultMap" type="com.yf.usercenter.entity.TestMybatisQuery">
         <id column="id" property="id" />
         <result column="name" property="name" />
-        <result column="bound" property="bound" />
+        <result column="age" property="age" />
+        <result column="sex" property="sex" />
+        <result column="salary" property="salary" />
     </resultMap>
 
     <!-- 通用查询结果列 -->
     <sql id="Base_Column_List">
-        id, name, bound
+        id, name, age, sex, salary
     </sql>
 
 </mapper>

@@ -54,3 +54,7 @@ brokerIP1=192.168.1.19
 nohup sh bin/mqnamesrv > ~/logs/rocketmqlogs/namesrv.log &
 #启动broker
 nohup sh bin/mqbroker -n 192.168.1.19:9876 -c conf/broker.conf autoCreateTopicEnable=true > ~/logs/rocketmqlogs/broker.log &
+
+##rocketmq 服务关闭
+先关闭broker服务 ：sh bin/mqshutdown broker
+然后关闭namesrv服务：sh bin/mqshutdown namesrv

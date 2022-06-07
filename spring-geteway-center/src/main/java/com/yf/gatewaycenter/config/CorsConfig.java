@@ -1,5 +1,8 @@
 package com.yf.gatewaycenter.config;
 
+import java.time.LocalTime;
+import java.time.format.DateTimeFormatter;
+import java.time.format.FormatStyle;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.cors.CorsConfiguration;
@@ -20,5 +23,10 @@ public class CorsConfig {
         source.registerCorsConfiguration("/**", config);
 
         return new CorsWebFilter(source);
+    }
+
+    public static void main(String[] args) {
+        DateTimeFormatter formatter = DateTimeFormatter.ofLocalizedTime(FormatStyle.SHORT);
+        System.out.println(formatter.format(LocalTime.now()));
     }
 }

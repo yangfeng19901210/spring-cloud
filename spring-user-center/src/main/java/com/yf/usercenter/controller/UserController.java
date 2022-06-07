@@ -30,11 +30,13 @@ public class UserController {
   @Autowired
   private SpringSysUserService springSysUserService;
 
-  @Value("${user.name}")
-  private String name;
+//  @Value("${person.name}")
+//  private String name;
+//
+//  @Value("${person.age}")
+//  private String age;
 
-  @Value("${user.age}")
-  private Integer age;
+
 
   @PostMapping("/add")
   public SysUser addUser(@RequestBody  SysUser sysUser){
@@ -55,10 +57,11 @@ public class UserController {
 //    log.info("我被请求了，请求id={}",id);
 //    return userService.getUserById(id);
 //  }
-  @GetMapping("/getConfig")
-  public String getCongigure(){
-    return "姓名="+name+"年龄="+age;
-  }
+//  @GetMapping("/getConfig")
+//  public String getCongigure(){
+//    System.out.println(name+age);
+//    return "姓名="+name+age;
+//  }
 
   @GetMapping("/{id}")
   public SpringSysUser getUserById(@PathVariable Integer id){

@@ -31,15 +31,15 @@ public class MpGenerator {
         DataSourceConfig dsc = new DataSourceConfig();
         dsc.setDbType(DbType.MYSQL);
         dsc.setUrl(
-            "jdbc:mysql://47.93.43.154:6033/ih_chronic?useUnicode=true&characterEncoding=utf8&useSSL=false");
+            "jdbc:mysql://localhost:3308/spring_user_center?useUnicode=true&characterEncoding=utf8&useSSL=false");
         dsc.setDriverName("com.mysql.cj.jdbc.Driver");
         dsc.setUsername("root");
-        dsc.setPassword("SXYX@2021!");
+        dsc.setPassword("root");
         dsc.setTypeConvert(new MySqlTypeConvertCustom());
         mpg.setDataSource(dsc);
         //代码生成位置设置
-        CodePath codePath = CodePath.builder().projectRootPath("D:/springCloud/spring-generate-code")
-            .basePackage("cn.shanxincd.ih.chronic").build();
+        CodePath codePath = CodePath.builder().projectRootPath("D:/springCloud/spring-user-center")
+            .basePackage("com.yf.usercenter").build();
         // 全局配置
         GlobalConfig gc = new GlobalConfig();
         gc.setOutputDir(codePath.getProjectRootPath()+"/src/main/java");  //修改成自己的项目路径一直到java
@@ -102,7 +102,7 @@ public class MpGenerator {
         //strategy.setExclude(new String[]{rb.getString("tableName")});
 
         //建立包含哪些表空 为所有表
-        strategy.setInclude("chronic_medication_plan","chronic_medication_plan_drug");
+        strategy.setInclude("test_mybatis_query");
         mpg.setStrategy(strategy);
         mpg.setTemplateEngine(new FreemarkerTemplateEngine());
         mpg.execute();

@@ -1,13 +1,12 @@
 package com.yf.ordercenter.service;
 
-import com.yf.ordercenter.api.UserRomoteService;
 import com.yf.ordercenter.dto.USerOrderDTO;
 import com.yf.ordercenter.dto.UserDto;
 import com.yf.ordercenter.entity.Order;
+import com.yf.ordercenter.service.feign.RemoteUserService;
 import com.yf.ordercenter.vo.OrderVo;
 import java.util.HashMap;
 import java.util.Map;
-import org.apache.rocketmq.spring.annotation.RocketMQTransactionListener;
 import org.apache.rocketmq.spring.core.RocketMQTemplate;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -26,7 +25,7 @@ public class OrderService {
   private RocketMQTemplate rocketMQTemplate;
 
   @Autowired
-  UserRomoteService userRomoteService;
+  RemoteUserService remoteUserService;
 
   static {
     Order order1 = Order.builder()
@@ -70,7 +69,7 @@ public class OrderService {
     OrderVo orderVo = new OrderVo();
     BeanUtils.copyProperties(order,orderVo);
     //远程调用用户微服务，获取对应的用户信息
-    UserDto userDTO = userRomoteService.getUserById(order.getUserId());
+    UserDto userDTO = remoteUserService.getUserById(order.getUserId());
     orderVo.setUserName(userDTO.getName());
     return orderVo;
   }

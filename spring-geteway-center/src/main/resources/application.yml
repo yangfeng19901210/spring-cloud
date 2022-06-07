@@ -16,19 +16,11 @@ spring:
           enabled: true
           lower-case-service-id: true
       routes:
-        - id: header_route
-          uri: http://localhost:8032/test/testHeader  #http方式通过ip和端口匹配时，通过这种配置才能实现
+        - id: user_route
+          uri: lb://user-center
           # 匹配由英文和数字组成的字符
           predicates:
-            - Path=/test/testHeader    #必须和目标uri中端口号后面的路径一致
-            - Header=some,\d+
-        #Host 配置详解
-        - id: host_route
-          uri: lb://order-center
-          # 匹配由英文和数字组成的字符
-          predicates:
-            - Path=/test/**
-            - Host=**.org.com
+            - CustomerTimeBetween=上午9:00,下午6:00
 
 
 
