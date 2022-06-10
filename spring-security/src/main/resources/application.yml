@@ -1,5 +1,12 @@
-# 配置freemarker
+server:
+  port: 8015
 spring:
+  datasource:
+    url: jdbc:mysql://localhost:3308/rbac?useUnicode=true&characterEncoding=UTF-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=Asia/Shanghai&useSSL=false&allowMultiQueries=true
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: root
+  # 配置freemarker
   freemarker:
     # 设置模板后缀名
     suffix: .ftl
@@ -15,5 +22,18 @@ spring:
   # 设置静态文件路径，js,css等
   mvc:
     static-path-pattern: /static/**
-server:
-  port: 8015
+    pathmatch:
+      matching-strategy: ant_path_matcher
+#mybatis-plus配置
+mybatis-plus:
+  mapper-locations: classpath:mapper/*.xml
+  configuration:
+    map-underscore-to-camel-case: true
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    cache-enabled: false
+    call-setters-on-nulls: true
+  type-aliases-package: com.yf.entity
+  global-config:
+    db-config:
+      id-type: auto
+

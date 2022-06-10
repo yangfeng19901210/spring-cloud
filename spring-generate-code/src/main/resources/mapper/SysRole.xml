@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.yf.ordercenter.dao.RocketmqTransactionLogMapper">
+<mapper namespace="cn.shanxincd.ih.chronic.dao.SysRoleMapper">
 
     <!-- 通用查询映射结果 -->
-    <resultMap id="BaseResultMap" type="com.yf.ordercenter.model.RocketmqTransactionLog">
+    <resultMap id="BaseResultMap" type="cn.shanxincd.ih.chronic.entity.SysRole">
         <id column="id" property="id" />
-        <result column="transaction_Id" property="transactionId" />
-        <result column="log" property="log" />
+        <result column="roleName" property="roleName" />
+        <result column="roleDesc" property="roleDesc" />
     </resultMap>
 
     <!-- 通用查询结果列 -->
     <sql id="Base_Column_List">
-        id, transaction_Id, log
+        id, roleName, roleDesc
     </sql>
 
 </mapper>

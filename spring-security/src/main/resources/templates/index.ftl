@@ -7,3 +7,5 @@
 <a href="deleteOrder">删除订单</a>
 <br>
 <a href="updateOrder">修改订单</a>
+<br>
+<a href="getAllOrder">获取所有订单</a>

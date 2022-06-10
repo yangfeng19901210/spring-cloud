@@ -3,6 +3,7 @@ package com.yf.controller;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
 public class OrderController {
@@ -40,6 +41,11 @@ public class OrderController {
 	@GetMapping("/login")
 	public String login() {
 		return "login";
+	}
+	@GetMapping("/getAllOrder")
+	@ResponseBody
+	public String getAllOrder(){
+		return "获取所有订单成功";
 	}
 
 }

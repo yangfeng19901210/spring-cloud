@@ -1,9 +1,11 @@
 package com.yf;
 
+import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
+@MapperScan("com.yf.dao")
 public class AppSecurity {
 
 	public static void main(String[] args) {
